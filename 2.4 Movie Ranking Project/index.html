@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERESTING MOVIES</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #a45ed3 20%, #bb5edf18 35%, #9850d4e3 40%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .headline {
+            background-image: linear-gradient(to right, #8c00ff 0%, #735DA5 100%);
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding: 20px 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative; /* Add position relative for pseudo element */
+            margin-bottom: 20px; /* Add margin to separate from movie list */
+            color: #ffffff;
+            text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+                         0px -4px 10px rgba(255,255,255,0.3);
+            font-size: 25px;
+        }
+
+        .headline::before { /* Add pseudo element for decorative border */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            border: 10px solid #fff; /* White border */
+            z-index: -1; /* Ensure it's behind the headline content */
+            box-sizing: border-box;
+            clip-path: polygon(10% 0, 90% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 50px; /* Increase font size for heading */
+            margin: 30px auto; /* Center the heading */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 8px;
+            background-color: #ffffff;
+            padding: 6px;
+            border-radius: 30px;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 160px;
+            height: auto;
+            border-radius: 25px;
+        }
+
+        .movie-info {
+            flex: 1;
+            padding-left: 20px; /* Fix typo */
+        }
+
+        .movie-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #000;
+            padding: 25px;
+        }
+
+        .movie-description {
+            font-size: 16px;
+            padding:25px;
+        }
+        .developer {
+            color: rgba(34, 1, 5, 0.678);
+            font-size: 16px; 
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="headline">
+    <h1>INTERESTING MOVIES</h1>
+    <p>[THAT DOROTHY J. KOECH WATCHED]</p>
+</div>
+<ul>
+    <li>
+        <img src="../assets/images/my-wife-&-kids-movie-cover-md.jpg" alt="My Wife & Kids Movie Cover"/>
+        <div class="movie-info">
+            <span class="movie-title">My Wife & Kids</span>
+            <p class="movie-description">"My Wife And Kids", is a movie series comedy of a husband and his wife that stands as the anchor of love and resilience, while his kids are the vibrant colors that paint each chapter with laughter and adventure. Together, they are the cherished stars that illuminate their world with boundless joy and warmth.</p>
+        </div>
+    </li>
+
+    <li>
+        <img src="../assets/images/homeless-to-harvard-the-liz-murray-story-movie-cover-md.jpg"
+             alt="Homeless to Harvard Movie Cover"/>
+        <div class="movie-info">
+            <span class="movie-title">Homeless to Harvard</span>
+            <p class="movie-description">"Homeless to Harvard", is a moving story about a girl who overcomes incredible challenges to achieve her dream of going to Harvard University, despite growing up without a home.</p>
+        </div>
+    </li>
+
+    <li>
+        <img src="../assets/images/sister-act-image-cover.jpg" alt="Sister Act Movie Cover"/>
+        <div class="movie-info">
+            <span class="movie-title">Sister Act</span>
+            <p class="movie-description">In "Sister Act", follow the hilarious escapades of Deloris Van Cartier, a sassy lounge singer forced into hiding as a nun after witnessing a crime. With uproarious humor and toe-tapping musical numbers, it's a feel-good comedy that will have you singing along and laughing out loud.</p>
+        </div>
+    </li>
+
+    <li>
+        <img src="../assets/images/the-gods-must-be-crazy.jpeg" width="240px" height="auto" alt="The Gods Must Be Crazy Movie Cover"/>
+        <div class="movie-info">
+            <span class="movie-title">The Gods Must Be Crazy</span>
+            <p class="movie-description">"The Gods Must Be Crazy", is a whimsical adventure that follows a San bushman's journey after discovering a Coca-Cola bottle believed to be a divine gift. Chaos ensues among his tribe, leading him on a quest to return the disruptive object to the gods at the edge of the world.</p>
+        </div>
+    </li>
+</ul>
+<p class="developer">Developed by: Dorothy J. Koech</p>
+</body>
+</html>

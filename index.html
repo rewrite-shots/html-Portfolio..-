@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="preload" href="important-image.png" as="image">
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #7DF9FF, #FF00FF, #8A2BE2, #40E0D0, #FF6F61);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradient {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+
+        .button {
+            background-color: blue;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        
+        header {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 26px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border: 5px solid #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 35px;
+        }
+
+        .image-container img {
+            width: 650px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            overflow: visible;
+            border-style: groove;
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color:#fff;
+            margin-bottom: 2px;
+        }
+        .link {
+            font-size: 10px;
+            text-decoration:none;
+            color: #333;
+            margin-top: 3px;
+        }
+
+        .address {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            border: 4px solid #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+            display: inline-block;
+            justify-content: center;
+        }
+
+        a.address:hover {
+            background-color: #2b1bbd;
+            color: #0c8129;
+        }
+        
+        .projects {
+          font-size: 16px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-style: italic;
+          color: #811178;
+          padding: 10px 10px;
+          border-radius: 10px;
+          text-decoration: underline; 
+          transition: all 0.3s ease;
+        }
+
+        .projects:hover {
+            background-color: #2b1bbd;
+            color: #0c8129;
+            border-color: #2b1bbd;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            padding-top: 20px;
+            border-style: dashed;
+            height: 15px;
+            background: linear-gradient(to right, #0e0c25, #FF1493, #241391, #811178);
+        }
+        .developer {
+            color: rgba(34, 1, 5, 0.678);
+            font-size: 15px;
+            text-align: right;
+            padding-right: 10px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Website Portfolio!</h1>
+        <hr>
+        <div class="img-container">
+            <img src="./assets/images/Dorothy Koech's pic.png" alt="Dorothy Koech">
+        </div>
+        <p>Interesting Movies that I have watched, on the link below:</p>
+        <a href="./2.4 Movie Ranking Project/index.html" class="projects" target="_blank">The Movie Project</a>
+        <p>For the Birthday invite details, click the link below:</p>
+        <a href="./3.4 Birthday Invite Project/index.html" class="projects" target="_blank">The Birthday Project</a>
+       <br><br>
+        <a href="./public/about.html" class="address" target="_blank">About Me</a>  
+        <a href="./public/contact.html" class="address"  target="_blank">Contact Me</a>
+   </header>
+        
+   <p class="developer">Developed by: Dorothy J. Koech</p>
+  
+</body>
+</html>
+
